@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+/* Tampilan Dashboard SIM Mahasiswa */
+.dashboard-stat {
+    border: none;
+    border-radius: 16px;
+    background: #ffffff;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    height: 100%;
+}
+
+.dashboard-stat:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(15, 23, 42, 0.10) !important;
+}
+
+.dashboard-stat .card-body {
+    padding: 24px;
+}
+
+.dashboard-stat h2 {
+    font-size: 30px;
+    margin-top: 8px;
+}
+
+.dashboard-stat small {
+    font-size: 13px;
+}
+
+.dashboard-section {
+    border-radius: 16px;
+    overflow: hidden;
+    background: #ffffff;
+}
+
+.dashboard-section .card-header {
+    background: #ffffff;
+    padding: 20px 24px;
+}
+
+.dashboard-section .table th {
+    color: #64748b;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    padding: 16px 20px;
+}
+
+.dashboard-section .table td {
+    padding: 16px 20px;
+}
+
+.dashboard-heading {
+    color: #0f172a;
+    font-weight: 700;
+}
+
+@media (max-width: 576px) {
+    .dashboard-stat .card-body {
+        padding: 18px;
+    }
+
+    .dashboard-stat h2 {
+        font-size: 24px;
+    }
+}
